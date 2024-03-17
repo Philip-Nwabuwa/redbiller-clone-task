@@ -1,3 +1,4 @@
+import Icons from "@/components/common/Icons";
 import Link from "next/link";
 
 const Quiz = () => {
@@ -14,25 +15,7 @@ const Quiz = () => {
           className="flex items-center gap-2 text-[1.25rem] font-bold"
           href={"https://redbiller.com/why-redbiller"}
         >
-          See why you need redbiller; take a quiz.{" "}
-          <svg
-            width="48"
-            height="48"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="injected-svg icon bg-primary"
-            data-src="frontends/v3/assets/template/img/icons/interface/icon-arrow-right.svg"
-          >
-            <path
-              d="M12 5L19 12L12 19M5 12H18H5Z"
-              stroke="#93120F"
-              strokeWidth="2px"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              fill="none"
-            ></path>
-          </svg>
+          See why you need redbiller; take a quiz. <Icons.redRight />
         </Link>
       </div>
     </section>

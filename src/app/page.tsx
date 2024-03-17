@@ -1,4 +1,5 @@
 import Navbar from "@/components/common/Navbar";
+import Features from "@/components/module/home/Features";
 import Main from "@/components/module/home/Main";
 import Quiz from "@/components/module/home/Quiz";
 
@@ -10,6 +11,7 @@ export default function Home() {
         <Main />
       </div>
       <Quiz />
+      <Features />
     </main>
   );
 }

@@ -4,7 +4,7 @@ const SignInBtn = () => {
   return (
     <div className="flex items-center font-bold">
       <Link href={"https://app.redbiller.com/"}>
-        <button className="py-[5.5px] px-[16px] border-solid border-gray-300 border bg-white text-[#93110f] hover:text-white hover:bg-black rounded-s-full">
+        <button className="py-[5.5px] px-[16px] border-solid border-gray-300 border bg-white text-[#93110f] hover:text-white hover:bg-black hover:border-black rounded-s-full">
           Sign in
         </button>
       </Link>
