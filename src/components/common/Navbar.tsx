@@ -6,6 +6,7 @@ import SignInBtn from "./SignInBtn";
 import { AlignJustify, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import Icons from "./Icons";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,7 +46,7 @@ const Navbar = () => {
         <div className="lg:flex hidden items-center gap-8">
           <ul className="flex items-center space-x-2 font-bold text-[18px]">
             <li className="text-[#93110f] hover:text-black px-4">
-              Why Redbiller?
+              <Link href={"/why-redbiller"}>Why Redbiller?</Link>
             </li>
             <li ref={dropdownRef} className="flex group px-4 cursor-pointer">
               <button
