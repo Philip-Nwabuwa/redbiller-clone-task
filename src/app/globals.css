@@ -5,3 +5,19 @@
 .container {
   @apply max-w-[1280px] mx-auto lg:px-4 px-10;
 }
+
+.pricingBackground {
+  background: linear-gradient(to right, #93120f, #046865);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

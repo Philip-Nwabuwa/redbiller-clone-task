@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <nav className="w-full h-[77px] bg-white fixed z-10">
       <div className="flex items-center justify-between h-full max-w-[1280px] mx-auto lg:px-4 px-10">
-        <div className="flex items-center text-[1.45rem] font-bold">
+        <Link className="flex items-center text-[1.45rem] font-bold" href={"/"}>
           <Image
             src="https://api.jochebedapps.com/1.0/storage/photos/logos/redbiller.png"
             alt="Redbiller"
@@ -42,7 +42,7 @@ const Navbar = () => {
             height={30}
           />
           edbiller™
-        </div>
+        </Link>
         <div className="lg:flex hidden items-center gap-8">
           <ul className="flex items-center space-x-2 font-bold text-[18px]">
             <li className="text-[#93110f] hover:text-black px-4">
@@ -88,7 +88,10 @@ const Navbar = () => {
               </div>
             </li>
             <li className="px-4">Developer</li>
-            <li className="px-4">Pricing</li>
+            <Link href={"/pricing"}>
+              <li className="px-4">Pricing</li>
+            </Link>
+
             <li className="px-4">Blog</li>
           </ul>
           <div>
@@ -114,7 +117,9 @@ const Navbar = () => {
                     <Icons.dropdownArrow />
                   </li>
                   <li>Developer</li>
-                  <li>Pricing</li>
+                  <Link href={"/pricing"}>
+                    <li>Pricing</li>
+                  </Link>
                   <li>Blog</li>
                   <div>
                     <SignInBtn />

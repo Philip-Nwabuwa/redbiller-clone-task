@@ -49,7 +49,7 @@ const Main = () => {
           Take a quiz below on your most preferred topics.
         </p>
         <div className="py-12 ">
-          <div className="w-full max-w-[736px] h-[1px] bg-[#f2f5f9]"></div>
+          <div className="w-full max-w-[736px] h-[1.5px] bg-[#f2f5f9]"></div>
         </div>
         <div className="w-full max-w-[736px] flex flex-col gap-6">
           {Quiz.map((item, index) => (
