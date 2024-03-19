@@ -337,8 +337,8 @@ const Features = () => {
               </h2>
               <p className="max-w-[451px] mb-[1.5rem] text-[1.25rem] text-[#565a66]">
                 Leverage on our payment infrastructure and serve the needs of
-                thousands of businesses across Africa. You'll have access to our
-                core infrastructure and enjoy a whole lot of whitelabel
+                thousands of businesses across Africa. You`&apos;`ll have access
+                to our core infrastructure and enjoy a whole lot of whitelabel
                 services.
               </p>
             </div>

@@ -134,7 +134,7 @@ const Footer = () => {
       </div>
       <div className="container">
         <div className="pt-6 border-t border-[#374151] flex justify-between items-center text-white">
-          <p>Redbiller. © 2024 | It doesn't end here™</p>
+          <p>Redbiller. © 2024 | It doesn`&apos;`t end here™</p>
           <div className="flex items-center gap-8">
             <Link href={"https://facebook.com/theRedbiller"}>
               <Icons.facebook />

@@ -75,7 +75,7 @@ const Pricing = () => {
               </div>
 
               <p className="opacity-70 text-base font-bold mb-4">
-                We'll settle you
+                We`&apos;`ll settle you
               </p>
               <div className="flex flex-col items-center justify-center text-center">
                 <p className="text-xl flex items-center gap-2 pb-8">
@@ -87,7 +87,7 @@ const Pricing = () => {
                 </p>
 
                 <p className="flex gap-1 text-base font-bold">
-                  <span className="opacity-70 ">We'll charge you</span>
+                  <span className="opacity-70 ">We`&apos;`ll charge you</span>
                   <span className="text-white">
                     NGN {chargedAmount.toFixed(2)}
                   </span>

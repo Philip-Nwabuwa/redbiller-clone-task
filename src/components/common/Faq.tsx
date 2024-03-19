@@ -49,14 +49,15 @@ const Faq = () => {
           Frequently Asked Questions
         </h3>
         <p className="text-xl text-center mb-[75px]">
-          We've collated a few most frequently asked questions from merchants.{" "}
+          We`&apos;`ve collated a few most frequently asked questions from
+          merchants.{" "}
           <Link
             href="mailto:sales@redbiller.email"
             className="text-[#93120f] font-bold"
           >
             Contact Sales
           </Link>{" "}
-          if yours perhaps isn't included.
+          if yours perhaps isn`&apos;`t included.
         </p>
         <div>
           {Questions.map((question, index) => {
