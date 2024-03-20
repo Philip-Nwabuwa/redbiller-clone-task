@@ -109,18 +109,25 @@ const Navbar = () => {
             {isOpen && (
               <div className="absolute -right-[42px] mt-4 w-screen bg-white border shadow-lg">
                 <ul className="px-10 py-4 space-y-2 font-bold text-[18px]">
-                  <li className="text-[#93110f] hover:text-black">
-                    Why Redbiller?
-                  </li>
+                  <Link href={"/why-redbiller"}>
+                    <li className="text-[#93110f] hover:text-black">
+                      Why Redbiller?
+                    </li>
+                  </Link>
                   <li className="flex group items-center gap-2">
                     Products
                     <Icons.dropdownArrow />
                   </li>
-                  <li>Developer</li>
+                  <Link href={"https://developer.redbiller.com"}>
+                    <li>Developer</li>
+                  </Link>
+
                   <Link href={"/pricing"}>
                     <li>Pricing</li>
                   </Link>
-                  <li>Blog</li>
+                  <Link href={"https://redbiller.com/blog"}>
+                    <li>Blog</li>
+                  </Link>
                   <div>
                     <SignInBtn />
                   </div>

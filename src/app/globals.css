@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .container {
-  @apply max-w-[1280px] mx-auto px-4;
+  @apply max-w-[1280px] mx-auto lg:px-10 px-4;
 }
 
 .pricingBackground {
