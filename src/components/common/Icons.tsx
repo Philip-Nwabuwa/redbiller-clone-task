@@ -2,14 +2,14 @@ interface IconProps {
   className?: string; // Define className prop with string type
 }
 
-export const redRight = () => (
+export const redRight: React.FC<IconProps> = ({ className }) => (
   <svg
     width="48"
     height="48"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className="injected-svg icon bg-primary"
+    className={`injected-svg icon bg-primary ${className}`}
     data-src="frontends/v3/assets/template/img/icons/interface/icon-arrow-right.svg"
   >
     <path

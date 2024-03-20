@@ -34,10 +34,20 @@ const features2 = [
 ];
 
 const Pricing = () => {
-  const [amount, setAmount] = useState(1000);
+  const [amount, setAmount] = useState<string | number>(1000);
 
-  const settledAmount = amount * 0.985;
-  const chargedAmount = amount * 0.015;
+  const settledAmount = Number(amount) * 0.985;
+  const chargedAmount = Number(amount) * 0.015;
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+
+    if (value === "") {
+      setAmount("");
+    } else {
+      setAmount(Number(value));
+    }
+  };
   return (
     <section className="bg-[#f7f8fc]">
       <div className="container pt-12 pb-[70px]">
@@ -68,14 +78,15 @@ const Pricing = () => {
                 <p>NGN</p>
                 <input
                   type="number"
+                  min={0}
                   className="bg-transparent w-full h-full border-none text-[1.25rem]"
                   value={amount}
-                  onChange={(e) => setAmount(Number(e.target.value))}
+                  onChange={handleChange}
                 />
               </div>
 
               <p className="opacity-70 text-base font-bold mb-4">
-                We`&apos;`ll settle you
+                We&apos;ll settle you
               </p>
               <div className="flex flex-col items-center justify-center text-center">
                 <p className="text-xl flex items-center gap-2 pb-8">
@@ -87,7 +98,7 @@ const Pricing = () => {
                 </p>
 
                 <p className="flex gap-1 text-base font-bold">
-                  <span className="opacity-70 ">We`&apos;`ll charge you</span>
+                  <span className="opacity-70 ">We&apos;ll charge you</span>
                   <span className="text-white">
                     NGN {chargedAmount.toFixed(2)}
                   </span>
@@ -120,16 +131,16 @@ const Pricing = () => {
         </div>
       </div>
       <div className="container bg-[#2c3039] text-white">
-        <div className="py-9 px-12">
+        <div className="py-9 lg:px-12">
           <h4 className="text-[1.75rem] fot-bold mb-4">Disbursement</h4>
           <div className="border border-solid border-white rounded-md p-6">
-            <div className="flex items-center justify-between pr-10 py-6">
+            <div className="flex items-center justify-between lg:pr-10 py-6">
               <p className="font-bold">NGN 5,000 and below</p> <p>NGN 10</p>
             </div>
-            <div className="flex items-center justify-between pr-10 py-6">
+            <div className="flex items-center justify-between lg:pr-10 py-6">
               <p className="font-bold">NGN 5,001 - NGN 50,000</p> <p>NGN 25</p>
             </div>
-            <div className="flex items-center justify-between pr-10 py-6">
+            <div className="flex items-center justify-between lg:pr-10 py-6">
               <p className="font-bold">NGN 50,001 and above and below</p>{" "}
               <p>NGN 50</p>
             </div>
@@ -146,10 +157,10 @@ const Pricing = () => {
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:py-[120px] md:py-20 py-10">
           <div className="flex flex-col items-start justify-center">
-            <h2 className="max-w-[451px] mb-[1.5rem] leading-[50px] font-bold text-[2.5rem]">
+            <h2 className="max-w-[451px] mb-[1.5rem] kg:leading-[50px] font-bold lg:text-[2.5rem] text-[1.5rem] text-center lg:text-start">
               Would you prefer fixed pricings instead?{" "}
             </h2>
-            <p className="max-w-[451px] mb-[1.5rem] text-[1.25rem] text-[#565a66]">
+            <p className="max-w-[451px] mb-[1.5rem] text-[1.25rem] text-[#565a66] text-center lg:text-start">
               When pricings are fixed, you get to know exactly what you pay on
               every transaction, which helps you to plan better for the future.
               Besides, balancing your books gets easier!

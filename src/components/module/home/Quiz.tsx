@@ -17,7 +17,8 @@ const Quiz = () => {
           className="flex items-center gap-2 lg:text-[1.25rem] text-base font-bold"
           href={"https://redbiller.com/why-redbiller"}
         >
-          See why you need redbiller; take a quiz. <Icons.redRight />
+          See why you need redbiller; take a quiz.{" "}
+          <Icons.redRight className="w-8 h-8 lg:w-12 lg:h-12" />
         </Link>
       </div>
     </section>

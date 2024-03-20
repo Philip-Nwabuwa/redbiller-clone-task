@@ -45,7 +45,7 @@ const Faq = () => {
   return (
     <section className="container py-[120px] flex flex-col justify-center items-center">
       <div className="max-w-[616px] w-full">
-        <h3 className="text-[54px] leading-[3.5rem] mb-6 font-bold text-center">
+        <h3 className="lg:text-[54px] text-3xl lg:leading-[3.5rem] mb-6 font-bold text-center">
           Frequently Asked Questions
         </h3>
         <p className="text-xl text-center mb-[75px]">
@@ -63,7 +63,7 @@ const Faq = () => {
           {Questions.map((question, index) => {
             return (
               <div key={index} className="my-[40px]">
-                <h4 className="font-bold text-[1.75rem] mb-4">
+                <h4 className="font-bold lg:text-[1.75rem] text-xl mb-4">
                   {question.question}
                 </h4>
                 <p className="mb-6 text-xl">{question.answer}</p>
@@ -73,13 +73,15 @@ const Faq = () => {
         </div>
 
         <p className="mt-12 bg-[#EAEDF2] px-6 py-3 rounded-md flex justify-center items-center gap-1">
-          Still have unanswered questions?
-          <Link
-            href="mailto:sales@redbiller.email"
-            className="text-[#93120f] font-bold"
-          >
-            Get in touch with Sales
-          </Link>
+          <span>
+            Still have unanswered questions?{" "}
+            <Link
+              href="mailto:sales@redbiller.email"
+              className="text-[#93120f] font-bold"
+            >
+              Get in touch with Sales
+            </Link>
+          </span>
         </p>
       </div>
     </section>
