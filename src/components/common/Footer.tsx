@@ -65,8 +65,8 @@ const Footer = () => {
   ];
   return (
     <footer className="bg-[#192d34] text-white pt-[120px] pb-6">
-      <div className="container grid grid-cols-1 lg:grid-cols-6 gap-10 mb-[96px]">
-        <div className="col-span-2">
+      <div className="container grid grid-cols-1 lg:grid-cols-6 lg:gap-10 gap-3 mb-[96px]">
+        <div className="lg:col-span-2">
           <div className="flex items-center text-[1.45rem] font-bold mb-4">
             <Image
               src="https://api.jochebedapps.com/1.0/storage/photos/logos/redbiller.png"
@@ -85,56 +85,64 @@ const Footer = () => {
         </div>
         <div>
           <h3 className="uppercase mb-4 text-xl font-bold">Products</h3>
-          {Products.map((product) => (
-            <Link
-              key={product.name}
-              href={product.href}
-              className="flex flex-col gap-4 py-2 font-bold text-[#babfc1] hover:text-white"
-            >
-              {product.name}
-            </Link>
-          ))}
+          <div className="flex lg:flex-col flex-row gap-4">
+            {Products.map((product) => (
+              <Link
+                key={product.name}
+                href={product.href}
+                className="lg:py-2 font-bold text-[#babfc1] hover:text-white"
+              >
+                {product.name}
+              </Link>
+            ))}
+          </div>
         </div>
         <div>
           <h3 className="uppercase mb-4 text-xl font-bold">COMPANY</h3>
-          {Company.map((company) => (
-            <Link
-              key={company.name}
-              href={company.href}
-              className="flex flex-col gap-4 py-2 font-bold text-[#babfc1] hover:text-white"
-            >
-              {company.name}
-            </Link>
-          ))}
+          <div className="flex lg:flex-col flex-row gap-4 ">
+            {Company.map((company) => (
+              <Link
+                key={company.name}
+                href={company.href}
+                className="lg:py-2 font-bold text-[#babfc1] hover:text-white"
+              >
+                {company.name}
+              </Link>
+            ))}
+          </div>
         </div>
         <div>
           <h3 className="uppercase mb-4 text-xl font-bold">LEGAL</h3>
-          {Legal.map((list) => (
-            <Link
-              key={list.name}
-              href={list.href}
-              className="flex flex-col gap-4 py-2 font-bold text-[#babfc1] hover:text-white"
-            >
-              {list.name}
-            </Link>
-          ))}
+          <div className="flex flex-row lg:flex-col gap-4">
+            {Legal.map((list) => (
+              <Link
+                key={list.name}
+                href={list.href}
+                className=" lg:py-2 font-bold text-[#babfc1] hover:text-white"
+              >
+                {list.name}
+              </Link>
+            ))}
+          </div>
         </div>
         <div>
           <h3 className="uppercase mb-4 text-xl font-bold">COMMUNITY</h3>
-          {Community.map((list) => (
-            <Link
-              key={list.name}
-              href={list.href}
-              className="flex flex-col gap-4 py-2 font-bold text-[#babfc1] hover:text-white"
-            >
-              {list.name}
-            </Link>
-          ))}
+          <div className="flex flex-row lg:flex-col gap-4">
+            {Community.map((list) => (
+              <Link
+                key={list.name}
+                href={list.href}
+                className="lg:py-2 font-bold text-[#babfc1] hover:text-white"
+              >
+                {list.name}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
       <div className="container">
-        <div className="pt-6 border-t border-[#374151] flex justify-between items-center text-white">
-          <p>Redbiller. © 2024 | It doesn`&apos;`t end here™</p>
+        <div className="pt-6 border-t border-[#374151] flex gap-4 lg:flex-row flex-col lg:justify-between justify-center items-center text-white">
+          <p>Redbiller. © 2024 | It doesn&apos;t end here™</p>
           <div className="flex items-center gap-8">
             <Link href={"https://facebook.com/theRedbiller"}>
               <Icons.facebook />

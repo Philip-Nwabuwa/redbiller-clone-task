@@ -6,7 +6,7 @@ const Golive = () => {
     <section className="bg-[#f8f9fd] rounded-md">
       <div className="container flex flex-col justify-center items-center py-[120px]">
         <div className="max-w-[641px] text-center mb-[75px]">
-          <h3 className="mb-6 text-[2.5rem] font-bold">
+          <h3 className="mb-6 lg:text-[2.5rem] text-[1.5rem] font-bold">
             Go live in 30 minutes or less!
           </h3>
           <p className="text-xl">

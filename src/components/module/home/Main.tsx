@@ -13,11 +13,11 @@ const Main = () => {
         height={582.3}
       />
       <div className="lg:cols-span-1 lg:row-span-2 md:row-span-1 bg-[#2c3039] text-white">
-        <div className="flex flex-col px-16 items-start justify-center h-full mx-auto">
-          <h1 className="text-[3.5rem] font-bold leading-[56px] mb-[1.5rem]">
+        <div className="flex flex-col lg:px-16 px-4 items-start justify-center h-full mx-auto">
+          <h1 className="lg:text-[3.5rem] text-[2rem] font-bold leading-[56px] lg:mb-[1.5rem] mb-4">
             Partner. Leverage. Grow.
           </h1>
-          <p className="text-[1.25rem] mb-[3rem]">
+          <p className="text-[1.25rem] lg:mb-[3rem] mb-6">
             Redbiller is making the Internet safer for businesses to innovate
             and expand.
           </p>

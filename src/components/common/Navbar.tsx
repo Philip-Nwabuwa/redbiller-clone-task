@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full h-[77px] bg-white fixed z-10">
-      <div className="flex items-center justify-between h-full max-w-[1280px] mx-auto lg:px-4 px-10">
+      <div className="flex items-center justify-between h-full container">
         <Link className="flex items-center text-[1.45rem] font-bold" href={"/"}>
           <Image
             src="https://api.jochebedapps.com/1.0/storage/photos/logos/redbiller.png"
